@@ -22,6 +22,9 @@ body {
     line-height: 1.6;
     transition: background-color var(--transition-duration), color var(--transition-duration);
     scroll-behavior: smooth;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -98,6 +101,7 @@ header nav ul li a:hover {
 }
 
 main {
+    flex: 1;
     margin-top: var(--header-height);
     padding: 40px; 
     animation: fadeIn 1s ease-in-out;
@@ -143,7 +147,6 @@ section:hover {
     background: var(--primary-color); 
 }
 
-
 .project {
     display: flex;
     flex-direction: column;
@@ -165,6 +168,27 @@ section:hover {
 
 .project a:hover {
     background: var(--secondary-color);
+}
+
+.project-link {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    transition: background-color var(--transition-duration);
+    text-align: center;
+}
+
+.project-link:hover {
+    background: var(--secondary-color);
+}
+
+.project-notice {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-top: 20px;
 }
 
 #cv {
@@ -266,4 +290,11 @@ footer .social-icons a {
 
 footer .social-icons a:hover {
     color: var(--secondary-color);
+}
+
+section[id] {
+    padding-top: var(--header-height); 
+    margin-top: -var(--header-height); 
+    padding-bottom: 40px; 
+    margin-bottom: 40px; 
 }
