@@ -51,22 +51,21 @@
                 <li><strong>Version Control:</strong> Git, GitHub</li>
                 <li><strong>Cloud:</strong> AWS, GCP</li>
             </ul>
-        </section>
-s        
+        </section>        
         
-
         <section id="projects">
             <h2>Projects</h2>
             <div class="project">
                 <h3>Data Pipeline Optimization</h3>
                 <p>Optimized data pipelines to enhance processing efficiency and reduce latency.</p>
-                <a href="#">View Project</a>
+                <a href="#" class="project-link">Project coming soon</a>
             </div>
             <div class="project">
                 <h3>Machine Learning Model</h3>
                 <p>Developed a machine learning model to predict customer churn with high accuracy.</p>
-                <a href="#">View Project</a>
+                <a href="#" class="project-link">Project coming soon</a>
             </div>
+            <p class="project-notice">More projects will be uploaded soon. Stay tuned!</p>
         </section>
 
         <section id="cv">
@@ -76,12 +75,9 @@ s
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Mobile Number: +27(0)81 845 2860</p>
-            <p>Email: <a href="mailto:katleho.moketo@umuzi.org">katleho.moketo@umuzi.org</a></p>
-            <p><a href="https://www.linkedin.com/in/katleho-moketo-352baa16a/" target="_blank">LinkedIn Profile</a></p>
-                        <div class="contact-form-container">
-                <form action="mailto:katleho.moketo@umuzi.org" method="post" enctype="text/plain">
+            <h2>Contact Form</h2>                        
+            <div class="contact-form-container">
+                <form action="https://formspree.io/f/https://formspree.io/f/xpwaaooy" method="POST">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
 
@@ -105,5 +101,16 @@ s
         </div>
         <p>&copy; 2024 Katleho Moketo. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const projectLinks = document.querySelectorAll(".project-link");
+            projectLinks.forEach(link => {
+                link.addEventListener("click", function(event) {
+                    event.preventDefault();
+                });
+            });
+        });
+    </script>
 </body>
 </html>
